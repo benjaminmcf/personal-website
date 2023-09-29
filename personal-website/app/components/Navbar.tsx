@@ -14,12 +14,10 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white font-bold text-2xl">Your Logo</div>
         <div className="hidden md:flex space-x-4">
-          <Link href="#" className='text-white'>Home</Link>
+          <Link href="/" className='text-white'>Home</Link>
           <Link href="/about" className='text-white'>About</Link>
           <Link href="/blog" className='text-white'>Blog</Link>
-          <a href="/blog" className="text-white">Blog</a>
-          <a href="#" className="text-white">Services</a>
-          <a href="#" className="text-white">Contact</a>
+          
         </div>
         <div className="md:hidden">
           <button
@@ -33,10 +31,9 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="flex flex-col space-y-4 items-center mt-4">
-            <a href="#" className="text-white">Home</a>
-            <a href="#" className="text-white">About</a>
-            <a href="#" className="text-white">Blog</a>
-            <a href="#" className="text-white">Contact</a>
+            <Link href="/" className='text-white'>Home</Link>
+            <Link href="/about" className='text-white'>About</Link>
+            <Link href="/blog" className='text-white'>Blog</Link>
           </div>
         </div>
       )}
